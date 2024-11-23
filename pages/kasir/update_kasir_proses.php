@@ -7,7 +7,9 @@ $telepon = $_POST['telepon'];
 $status = $_POST['status'];
 $username = $_POST['username'];
 $password = md5($_POST['password']);
-$query = ("UPDATE kasir SET nama='$nama', alamat='$alamat', telepon='$telepon', status='$status', username='$username', password='$password' WHERE id_kasir=$id");
+$level = $_POST['level'];
+
+$query = ("UPDATE kasir SET nama='$nama', alamat='$alamat', telepon='$telepon', status='$status', username='$username', password='$password', level='$level' WHERE id_kasir=$id");
 if ($koneksi->query($query)) {
   //redirect ke halaman index.php 
   //header("location: index.php");

@@ -31,6 +31,7 @@
                   <th>STATUS</th>
                   <th>USERNAME</th>
                   <th>PASSWORD</th>
+                  <th>POSISI</th>
                   <th>AKSI</th>
                 </tr>
               </thead>
@@ -50,6 +51,7 @@
                     <td><?php echo $row['status']; ?></td>
                     <td><?php echo $row['username']; ?></td>
                     <td><?php echo $row['password']; ?></td>
+                    <td><?php echo $row['level']; ?></td>
                     <td>
                       <a href="index.php?page=ubah_kasir&id=<?= $row['id_kasir']; ?>" class="btn btn-success"
                         role="button" title="Ubah Data"><i class="glyphicon glyphicon-edit"></i></a>

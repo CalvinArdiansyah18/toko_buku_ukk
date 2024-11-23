@@ -34,9 +34,9 @@
                 <input type="text" name="telepon" class="form-control" placeholder="Telepon" required>
               </div>
               <div class="form-group">
-                <label>Status</label>
+                <label>Posisi</label>
                 <select name="status" class="form-control" required>
-                  <option disabled selected>Pilih Status</option>
+                  <option disabled selected value="">Pilih Posisi</option>
                   <option value="Admin">Admin</option>
                   <option value="Pegawai">Pegawai</option>
                 </select>
@@ -48,6 +48,14 @@
               <div class="form-group">
                 <label>Password</label>
                 <input type="text" name="password" class="form-control" placeholder="Password" required>
+              </div>
+              <div class="form-group">
+                <label>Posisi</label>
+                <select name="level" class="form-control" required>
+                  <option disabled selected value="">Pilih Posisi</option>
+                  <option value="Admin">Admin</option>
+                  <option value="Pegawai">Pegawai</option>
+                </select>
               </div>
             </div>
             <!-- /.box-body -->

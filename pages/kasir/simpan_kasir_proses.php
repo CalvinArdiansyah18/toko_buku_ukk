@@ -6,8 +6,9 @@ $telepon = $_POST["telepon"];
 $status = $_POST["status"];
 $username = $_POST["username"];
 $password = md5($_POST["password"]);
+$level = $_POST["level"];
 
-$query = ("INSERT INTO kasir (nama, alamat, telepon, status, username, password) VALUES ('$nama', '$alamat', '$telepon', '$status', '$username', '$password')");
+$query = ("INSERT INTO kasir (nama, alamat, telepon, status, username, password, level) VALUES ('$nama', '$alamat', '$telepon', '$status', '$username', '$password', '$level')");
 if ($koneksi->query($query)) {
   //redirect ke halaman index.php 
   //header("location: index.php");
