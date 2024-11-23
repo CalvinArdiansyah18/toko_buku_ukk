@@ -1,3 +1,3 @@
 # User & Pass
-  * Admin & admin123
-  * Pegawai & pegawai123
+  * Admin & Admin123
+  * Pegawai & Pegawai123
