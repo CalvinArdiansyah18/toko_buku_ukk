@@ -43,6 +43,10 @@
             <button type="submit" class="btn btn-primary form-control">Sign In</button>
           </div>
         </form>
+        <div class="form-group text-center">
+          <p>Don't have an account?</p>
+          <a href="register.php" class="btn btn-secondary">Register</a>
+        </div>
       </div>
     </div>
   </div>
@@ -133,7 +137,7 @@
     box-shadow: 0 0 8px #ffd700;
   }
 
-  .form-control + i {
+  .form-control+i {
     position: absolute;
     right: 15px;
     top: 18px;
@@ -158,11 +162,30 @@
     transform: scale(1.05);
   }
 
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ffd700;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffd700;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .btn-secondary:hover {
+    background: #ffd700;
+    color: #6a11cb;
+  }
+
   .pos-r {
     position: relative;
   }
 
-  .form-control ~ span {
+  .form-control~span {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -172,7 +195,7 @@
     transition: width 0.4s ease, left 0.4s ease;
   }
 
-  .form-control:focus ~ span {
+  .form-control:focus~span {
     width: 100%;
     left: 0;
   }
