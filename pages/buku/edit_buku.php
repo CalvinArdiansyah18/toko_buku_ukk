@@ -1,5 +1,5 @@
 <?php
-include('../toko-buku/conf/conn.php');
+// include ('../../conf/conn.php');
 
 $id = $_GET['id'];
 
